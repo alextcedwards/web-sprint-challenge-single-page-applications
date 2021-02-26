@@ -19,7 +19,7 @@ code {
   align-items: center;
   margin-bottom: 10px;
   height: 100px;
-  border: 1px solid red;
+  border-bottom: 1px solid red;
 }
 .navigation h1 {
   font-size: 2rem;
@@ -85,6 +85,20 @@ code {
 .cta-btn:active {
   background: #e55050;
 }
+.orderbtn {
+  outline: none;
+  padding: 2px;
+  width: 150px;
+  height: 30px;
+  font-size: 1.6rem;
+  background: white;
+  color: red;
+  border-radius: 10px;
+  border: black solid 1px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
 .content-container {
   width: 90%;
   margin: auto;
@@ -107,7 +121,7 @@ code {
 .card {
   width: 30%;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background-color: #ececec;
   overflow: hidden;
@@ -140,7 +154,6 @@ code {
   width: 80px;
   height: 30px;
   margin-left: 10px;
-  border-bottom-right-radius: 10px;
 }
 .card button:hover {
   background: #1da581;
@@ -167,5 +180,6 @@ code {
 .footer {
   text-align: center;
   text-decoration: none;
-  border: 1px solid red;
+  border-top: 1px solid red;
+  margin-top: 20px;
 }

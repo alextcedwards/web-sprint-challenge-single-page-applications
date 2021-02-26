@@ -6,7 +6,7 @@ export default function Footer(props) {
       <h2>Lambda Eats</h2>
 
       <div className="footer-links">
-        <a href="#">Contact Us</a>|<a href="#">Locations</a>
+        <p>Contact Us</p>|<p>Locations</p>
       </div>
       <p>Copyright &copy; 2021 LambdaEats.com</p>
     </div>

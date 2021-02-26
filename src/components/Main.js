@@ -12,7 +12,7 @@ import veggie from "../images/veggie.jpg";
 export default function Main(props) {
   return (
     <div className="content-container">
-      <h2>Food Delivery right to your door!</h2>
+      <h2>Food Delivery Right To Your Door!</h2>
       <div className="content">
         <Pizza img={mac} name={"Mac And Cheese"} price={"12.99"} />
         <Pizza img={hawaii} name={"Hawaiian"} price={"12.99"} />

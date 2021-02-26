@@ -1,16 +1,15 @@
 import React from "react";
 
-import Nav from "./components/Nav.js";
-import Main from "./components/Main.js";
-import Footer from "./components/Footer.js";
+import Home from "./components/Home.js";
 
 const App = () => {
   return (
     <>
-      <Nav />
-      <Main />
-      <Footer />
+      <div className="App">
+        <Home />
+      </div>
     </>
   );
 };
+
 export default App;
