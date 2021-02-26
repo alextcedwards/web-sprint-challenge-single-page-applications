@@ -1,13 +1,171 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 100px;
+  border: 1px solid red;
+}
+.navigation h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #575757;
+}
+.navigation .btn {
+  padding: 8px;
+  width: 100px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  background: #ff5b5b;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+.navigation .btn:hover {
+  background: #fe7979;
+  cursor: pointer;
+}
+.navigation .btn:active {
+  background: #e55050;
+}
+.cover {
+  background-image: url(./images/Pizza.jpg);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+.cover h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 40px;
+  text-shadow: 3px 1px black;
+  text-align: center;
+}
+.cta-btn {
+  outline: none;
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+  font-size: 1.6rem;
+  background: #ff5b5b;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+.cta-btn:hover {
+  background: #fe7979;
+  cursor: pointer;
+}
+.cta-btn:active {
+  background: #e55050;
+}
+.content-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.content-container h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 30%;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: #ececec;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.pizzacont {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px 10px 0;
+}
+.card h3 {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #515151;
+}
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card button {
+  background: green;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card button:hover {
+  background: #1da581;
+  cursor: pointer;
+}
+.card button:focus {
+  outline: none;
+}
+.card button:active {
+  background: #1f8c6f;
+}
+.card h4 {
+  font-size: 1.1rem;
+  background: red;
+  color: white;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  padding: 0 15px 0 15px;
+  align-items: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.footer {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid red;
 }

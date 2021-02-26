@@ -1,10 +1,15 @@
 import React from "react";
 
+import Nav from "./components/Nav.js";
+import Main from "./components/Main.js";
+import Footer from "./components/Footer.js";
+
 const App = () => {
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
+      <Nav />
+      <Main />
+      <Footer />
     </>
   );
 };
