@@ -3,7 +3,7 @@ import Form from "../components/Form.js";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as yup from "yup";
-import { Link, Route } from "react-router-dom";
+import { Link, Route, Switch } from "react-router-dom";
 import Nav from "../components/Nav.js";
 import Main from "../components/Main.js";
 import Footer from "../components/Footer.js";
@@ -91,19 +91,24 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Link to=".components/Form.js">
+      <Link to="/Form">
         <button className="orderbtn">Order Now!</button>
       </Link>
-      <Route path="..components/Form.js">
-        <Form
-          values={formValues}
-          submit={formSubmit}
-          change={inputChange}
-          disabled={disabled}
-          errors={formErrors}
-        />
-      </Route>
-      <Main />
+      <Switch>
+        <Route path="/Form">
+          <Form
+            values={formValues}
+            submit={formSubmit}
+            change={inputChange}
+            disabled={disabled}
+            errors={formErrors}
+          />
+        </Route>
+
+        <Route exact path="/">
+          <Main />
+        </Route>
+      </Switch>
       <Footer />
     </>
   );

@@ -183,3 +183,20 @@ code {
   border-top: 1px solid red;
   margin-top: 20px;
 }
+
+.totalForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #ececec;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}

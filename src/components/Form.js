@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../App.css";
 export default function Form(props) {
   const { values, submit, change, disabled, errors } = props;
 
@@ -9,14 +9,13 @@ export default function Form(props) {
   };
 
   const onChange = (evt) => {
-    /* 🔥 FIX THIS SO IT ALSO WORKS WITH CHECKBOXES */
     const { name, value, type, checked } = evt.target;
     const valueToUse = type === "checkbox" ? checked : value;
     change(name, valueToUse);
   };
 
   return (
-    <div>
+    <div className="totalForm">
       <div className="contact">
         <h1>Contact</h1>
         <label>
@@ -227,7 +226,7 @@ export default function Form(props) {
             <div className="form-options">
               <input
                 type="text"
-                placeholder="Anything else you'd like to add?"
+                placeholder="Anything Else?"
                 name="additional"
                 onChange={onChange}
                 value={values.additional}
