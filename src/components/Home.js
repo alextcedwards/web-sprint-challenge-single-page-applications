@@ -6,6 +6,7 @@ import * as yup from "yup";
 import { Link, Route, Switch } from "react-router-dom";
 import Nav from "../components/Nav.js";
 import Main from "../components/Main.js";
+import Congrats from "../components/Congrats.js";
 import Footer from "../components/Footer.js";
 
 const initialFormValues = {
@@ -104,9 +105,11 @@ export default function Home() {
             errors={formErrors}
           />
         </Route>
-
         <Route exact path="/">
           <Main />
+        </Route>
+        <Route path="/congrats">
+          <Congrats />
         </Route>
       </Switch>
       <Footer />

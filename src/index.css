@@ -98,11 +98,13 @@ code {
   font-weight: 600;
   text-decoration: none;
   text-align: center;
+  margin-top: 200px;
 }
+
 .content-container {
   width: 90%;
   margin: auto;
-  margin-top: 20rem;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -187,6 +189,7 @@ code {
 .totalForm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 30%;
   height: auto;
   margin-bottom: 10px;
@@ -196,7 +199,23 @@ code {
   box-shadow: rgb(0 0 0 / 20%) 0px 4px 6px -1px,
     rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
+.formcont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 .contact {
   display: flex;
   flex-direction: column;
+}
+
+form button {
+  background: red;
+  color: white;
+  border: 1px white solid;
+  font-weight: bold;
+  width: 10%;
+  padding: 2px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
